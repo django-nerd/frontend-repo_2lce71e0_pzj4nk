@@ -1,18 +1,24 @@
 import React from 'react';
 import Navbar from './components/Navbar.jsx';
 import Hero from './components/Hero.jsx';
+import FeaturesRail from './components/FeaturesRail.jsx';
 import About from './components/About.jsx';
+import Showcase from './components/Showcase.jsx';
 import PortfolioGrid from './components/PortfolioGrid.jsx';
+import Callout from './components/Callout.jsx';
 import Contact from './components/Contact.jsx';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-neutral-950 text-white antialiased">
+    <div className="min-h-screen bg-neutral-950 text-white antialiased selection:bg-fuchsia-500/20 selection:text-white">
       <Navbar />
       <main>
         <Hero />
+        <FeaturesRail />
         <About />
+        <Showcase />
         <PortfolioGrid />
+        <Callout />
         <Contact />
       </main>
       <footer className="border-t border-white/10 bg-neutral-950/80">
