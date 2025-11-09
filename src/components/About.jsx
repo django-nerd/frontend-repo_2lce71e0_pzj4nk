@@ -2,27 +2,29 @@ import React from 'react';
 
 export default function About() {
   return (
-    <section id="about" className="relative py-24 bg-gradient-to-b from-white to-gray-50">
-      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 items-start">
+    <section id="about" className="relative py-24 bg-neutral-950 text-white">
+      <div className="mx-auto max-w-6xl px-6 grid lg:grid-cols-2 gap-12 items-start">
         <div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Hi, I’m a Developer</h2>
-          <p className="mt-4 text-gray-700 leading-relaxed">
-            I design and build clean, performant interfaces with a focus on delightful UX. My toolkit includes React, TypeScript, Node, and cloud services. I care about accessibility, motion, and maintainable code.
+          <h2 className="text-3xl sm:text-4xl font-bold">Crafting with code and curiosity</h2>
+          <p className="mt-4 text-white/70 leading-relaxed">
+            I design and engineer interfaces that feel effortless and memorable. My focus blends performant React, tasteful motion, and immersive 3D to help products communicate with clarity and personality.
           </p>
-          <p className="mt-4 text-gray-700 leading-relaxed">
-            Beyond work, I enjoy experimenting with creative coding and 3D on the web. If you have an interesting idea, let’s talk.
+          <p className="mt-4 text-white/70 leading-relaxed">
+            From rapid prototypes to production apps, I advocate for accessibility, well-structured systems, and code that scales.
           </p>
         </div>
-        <ul className="grid grid-cols-2 gap-4">
+        <ul className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           {[
-            ['React', 'Hooks, Suspense, SSR'],
-            ['TypeScript', 'typed safety everywhere'],
-            ['Node & FastAPI', 'APIs and services'],
-            ['Tailwind', 'rapid, consistent UI'],
+            ['React & TS', 'Modern apps, SSR, Suspense'],
+            ['Three.js', '3D scenes & shaders'],
+            ['Spline', 'Interactive hero visuals'],
+            ['Tailwind', 'Design systems at speed'],
+            ['Framer Motion', 'Micro‑interactions'],
+            ['FastAPI', 'APIs and services']
           ].map(([title, desc]) => (
-            <li key={title} className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
-              <p className="text-sm text-gray-500">{title}</p>
-              <p className="mt-1 font-medium text-gray-900">{desc}</p>
+            <li key={title} className="rounded-xl border border-white/10 bg-white/[0.03] p-5 shadow-sm">
+              <p className="text-xs text-white/60">{title}</p>
+              <p className="mt-1 font-medium">{desc}</p>
             </li>
           ))}
         </ul>
